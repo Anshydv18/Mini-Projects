@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="color">
+    <div class="body">
+        <div class="container">
+            <div class="pallete" id="red"></div>
+            <div class="pallete" id="black"></div>
+            <div class="pallete" id="blue"></div>
+            <div class="pallete" id="yellow"></div>
+        </div>
+    </div>
+    <script>
+        let button = document.querySelectorAll('.pallete');
+        let body = document.querySelector('.color');
+        button.forEach((item)=>{
+            item.addEventListener('click',function(e){
+               
+                if(e.target.id=="red"){
+      body.style.backgroundColor=e.target.id;
+    }
+    if(e.target.id=="black"){
+      body.style.backgroundColor=e.target.id;
+    }
+    if(e.target.id=="yellow"){
+      body.style.backgroundColor=e.target.id;
+    }
+    if(e.target.id=="blue"){
+      body.style.backgroundColor=e.target.id;
+    }
+            })
+        })
+    </script>
+</body>
+</html>
